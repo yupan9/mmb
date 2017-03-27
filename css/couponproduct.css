@@ -1,0 +1,145 @@
+.mmb-top {
+  line-height: 40px;
+  background-color: #e4393c;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.mmb-top a img {
+  height: 34px;
+  width: 34px;
+}
+.mmb-deng {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  padding: 8px 0px;
+  background-color: white;
+}
+.mmb-product {
+  background-color: white;
+  padding-bottom: 20px;
+}
+.mmb-product > .product {
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+.mmb-product > .product img {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+.mmb-product > .product p {
+  padding-left: 110px;
+}
+.mmb-product > .product p:nth-of-type(1) {
+  font-size: 15px;
+  color: black;
+}
+.mmb-product > .product p:nth-of-type(2) {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 0 15px 110px ;
+}
+.mmb-product > .product p:nth-of-type(2) span:last-child {
+  font-size: 20px;
+  font-weight: normal;
+}
+.mmb-product > .product p:nth-of-type(3) {
+  color: orange;
+  font-size: 13px;
+}
+.mmb-pianyi {
+  height: 40px;
+  border-top: 1px solid #ccc ;
+  border-bottom: 1px solid #ccc ;
+  line-height: 40px;
+  padding-left: 5px;
+}
+.mmb-pianyi a {
+  font-size: 14px;
+  color: black;
+}
+.kong {
+  height: 30px;
+  background-color: white;
+}
+.mmb-post {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+}
+.mmb-post a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+.mmb-post a:nth-of-type(1),
+.mmb-post a:nth-of-type(2) {
+  width: 30%;
+  border-right: 1px solid #e6e6e6;
+}
+.mmb-post a:nth-of-type(3) {
+  width: 35%;
+}
+.mmb-footer {
+  text-align: center;
+  padding-top: 20px;
+}
+.mmb-footer p:first-child a:first-child {
+  color: red;
+}
+.mask {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.mask .ppt {
+  position: relative;
+  top: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: -100px;
+}
+.mask .ppt div:nth-of-type(1) {
+  left: 0;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  margin-top: -25px;
+}
+.mask .ppt div:nth-of-type(2) {
+  right: 0;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  margin-top: -25px;
+}
+.mask .ppt .imgs {
+  width: 250px;
+  height: 200px;
+  margin-left: 105px;
+  overflow: hidden;
+}
+.mask .ppt .imgs > ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.mask .ppt .imgs > ul img {
+  width: 250px;
+  height: 200px;
+}

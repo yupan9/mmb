@@ -1,0 +1,242 @@
+//顶部通栏-start
+.mmb-top{
+  line-height: 50px;
+  background-color:#ff841d;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 10px;
+
+  a{
+    img{
+      height: 34px;
+      width: 34px;
+    }
+  }
+}
+
+
+//搜索栏-start
+.mmb-search{
+  height: 50px;
+  border-bottom:1px solid #e6e6e6;
+  background-color:white;
+  form{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 50px;
+    input{
+      width: 80%;
+      height: 30px;
+      border-radius: 15px;
+      background-color:#f1f1f1;
+      font-size: 16px;
+      padding-left: 15px;
+    }
+    button{
+      font-size: 16px;
+      height: 30px;
+      width: 65px;
+      background-color:#ff841d ;
+      color: white;
+      border-radius: 15px;
+    }
+  }
+}
+
+
+//推荐/品牌推荐-start
+.mmb-give{
+  a{
+    display: block;
+    height: 35px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top:2px;
+    background-color: white;
+    border-bottom: 1px solid #e6e6e6;
+    span{
+      font-size: 14px;
+    }
+  }
+}
+
+
+//商品-start
+.mmb-product{
+  background-color: white;
+  font-size: 14px;
+  >a{
+    display:block;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    img{
+      width: 100px;
+      height: 100px;
+    }
+    p{
+      padding-top:35px;
+      font-size: 12px;
+      color:#a1a1a1;
+      s{
+        display: inline-block;
+        height: 12px;
+        width: 1px;
+        margin: 5px;
+        background-color: #a1a1a1;
+        vertical-align: middle;
+      }
+      span:last-child{
+        font-size: 12px;
+      }
+    }
+    span:nth-child(2){
+      color:#ff9000;
+    }
+  }
+}
+
+
+//更多优惠-start
+.mmb-fenye{
+  .fenye{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    button{
+      padding: 8px 20px;
+      color: #5a5a5a;
+      background-color:#d4d4d4;
+      border-radius: 3px;
+      border: 1px solid #8c8c8c;
+    }
+    ul{
+      height: 32px;
+      width: 80px;
+      text-align: center;
+      border-top: 1px solid #8c8c8c;
+      border-bottom: 1px solid #8c8c8c;
+
+      li{
+        height: 32px;
+        width: 80px;
+        line-height: 32px;
+        position: relative;
+        border-left: 1px solid #8c8c8c;
+        border-right: 1px solid #8c8c8c;
+        i{
+          position: absolute;
+          right: 10px;
+        }
+      }
+      li:last-child{
+        border-bottom: 1px solid #8c8c8c;
+      }
+    }
+    .overu{
+      overflow: hidden;
+    }
+
+
+  }
+  .lianjie{
+    padding-left:5px;
+    margin-top: 30px;
+    >p:first-child{
+      font-size: 18px;
+      color: black;
+    }
+    p{
+      margin-top: 5px;
+    }
+    p:last-child{
+      margin-bottom:20px;
+    }
+  }
+
+
+}
+
+
+//登录注册
+.mmb-post{
+  border-top:1px solid #e6e6e6;
+  border-bottom:1px solid #e6e6e6;
+  width: 100%;
+  a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+
+  }
+  a:nth-of-type(1),a:nth-of-type(2){
+    width: 30%;
+    border-right: 1px solid #e6e6e6;
+  }
+  a:nth-of-type(3){
+    width: 35%;
+  }
+}
+
+
+//底部-start
+.mmb-footer{
+  text-align: center;
+  padding-top:20px;
+  margin-bottom: 65px;
+  p:first-child{
+    a:first-child{
+      color: red;
+    }
+  }
+
+}
+
+//底部固定通栏-start
+.mmb-fixt{
+  width: 100%;
+  background-color:white;
+  z-index: 2;
+  position:fixed;
+  bottom: 1px;
+  display: flex;
+  align-items: center;
+  padding:10px;
+  span:first-child{
+    margin-right: 15px;
+    font-size: 24px;
+  }
+  img{
+    height: 40px;
+    width: 40px;
+  }
+  >div{
+    padding-left: 10px;
+    height: 40px;
+    p:nth-of-type(1){
+      font-size: 18px;
+
+    }
+    p:nth-of-type(2){
+      font-size: 14px;
+      padding-top: 5px;
+    }
+  }
+  a{
+    margin-left:145px;
+    button{
+      height: 30px;
+      width: 80px;
+      background-color:#ff7700 ;
+      border-radius: 7px;
+    }
+  }
+}
+
+

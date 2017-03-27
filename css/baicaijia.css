@@ -1,0 +1,139 @@
+.mmb-top {
+  line-height: 40px;
+  background-color: #e4393c;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.mmb-top a img {
+  height: 34px;
+  width: 34px;
+}
+.mmb-nav {
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+.mmb-nav > .ulss {
+  display: flex;
+  justify-content: space-between;
+}
+.mmb-nav > .ulss > li {
+  padding: 0 10px;
+  height: 31px;
+  float: left;
+}
+.mmb-nav > .ulss > li a {
+  display: inline-block;
+  width: 60px;
+  line-height: 31px;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+.mmb-nav > .ulss li:nth-of-type(1) > a {
+  border-bottom: 3px solid #e4393c;
+}
+.mmb-product {
+  margin-top: 10px;
+}
+.mmb-product .tproduct {
+  margin-top: 10px;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  padding: 10px 5px 10px 5px;
+  position: relative;
+}
+.mmb-product .tproduct img {
+  width: 130px;
+  height: 130px;
+  float: left;
+}
+.mmb-product .tproduct .divs {
+  float: left;
+}
+.mmb-product .tproduct .divs p {
+  font-size: 24px;
+  color: #fc353a;
+  padding-top: 10px;
+}
+.mmb-product .tproduct .divs p i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+.mmb-product .tproduct .divs p em {
+  font-size: 12px;
+}
+.mmb-product .tproduct .divs p del {
+  font-size: 13px;
+  color: #a8a8a8;
+  padding-left: 5px;
+}
+.mmb-product .tproduct .divs > div:nth-of-type(1) {
+  margin: 15px 0;
+}
+.mmb-product .tproduct .divs > div:nth-of-type(1) > a:nth-of-type(1) {
+  padding: 5px 5px;
+  border: 1px dotted red;
+  color: red;
+  font-size: 12px;
+}
+.mmb-product .tproduct .divs > div:nth-of-type(1) > a:nth-of-type(2) {
+  position: absolute;
+  font-size: 12px;
+  right: 15px;
+  padding: 10px 10px;
+  background-color: #ff5e5d;
+  color: white;
+  border-radius: 5px;
+}
+.mmb-product .tproduct .divs .baifenbi span {
+  display: inline-block;
+  width: 80px;
+  background-color: darksalmon;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.mmb-product .tproduct .divs .baifenbi span > s {
+  background-color: red;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.mmb-product .tproduct .divs .baifenbi b {
+  color: #666 ;
+  font-size: 12px;
+}
+.mmb-post {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+}
+.mmb-post a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+.mmb-post a:nth-of-type(1),
+.mmb-post a:nth-of-type(2) {
+  width: 30%;
+  border-right: 1px solid #e6e6e6;
+}
+.mmb-post a:nth-of-type(3) {
+  width: 35%;
+}
+.mmb-footer {
+  text-align: center;
+  padding-top: 20px;
+}
+.mmb-footer p:first-child a:first-child {
+  color: red;
+}

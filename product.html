@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢买</title>
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_9y4v6qtz1zoos9k9.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv/html5shiv.js"></script>
+    <script src="js/respond/respond.js"></script>
+    <![endif]-->
+    <script src="js/node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/product.js"></script>
+</head>
+<body>
+<!--顶部下载栏-start-->
+<div class="mmb-middtop">
+    <span class="iconfont icon-chacha01 deletes1"></span>
+    <img src="images/logo.png" alt=""/>
+    <div>
+        <p>慢慢买比价客户端</p>
+        <p>掌控价格不再买贵</p>
+        <p>500万人正在使用</p>
+    </div>
+    <a href="#"><button>立即打开</button></a>
+</div>
+<!--顶部通栏-start-->
+<div class="mmb-top">
+    <img src="images/header_logo.png" class="m_l10">
+    <a href="#" class="fr m_r10"><img src="images/header_app.png" alt=""/></a>
+</div>
+<!--搜索栏-start-->
+<div class="mmb-search">
+    <form>
+        <input type="text" placeholder="请输入你想比价的商品"/>
+        <button class="ac">搜索</button>
+    </form>
+</div>
+<!--推荐-start-->
+<div class="mmb-give">
+    <a href="index.html">首页 ></a>
+    <a href="#" class="games"><span></span><i>></i></a>
+    <a href="#" class="games1">型号</a>
+</div>
+<!--商品-start-->
+<div class="mmb-product">
+
+</div>
+<!--品牌推荐-start-->
+<div class="mmb-fenye">
+    <div class="row">
+        <div class="col-xs-4">比价购买</div>
+        <div class="col-xs-4">产品参数</div>
+        <div class="col-xs-4">优选评价</div>
+    </div>
+    <div class="jd">
+
+    </div>
+    <div class="alis"><p>* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p></div>
+</div>
+
+<!--网友评价-start   -->
+<div class="mmb-ask"><div class="hui-top">网友评价</div></div>
+<div class="looks">查看更多评价</div>
+<!--中部图标-start-->
+<div class="mmb-middi">
+    <img src="images/logo.png" alt=""/>
+    <div>
+        <p>慢慢买APP</p>
+        <p>给喜欢网购的同学推荐下[慢慢买]这个APP，第一时间更新国内外的优惠信息！</p>
+    </div>
+    <a href="#"><button>立即打开</button></a>
+</div>
+
+<!--登录注册-start-->
+<div class="mmb-post">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#" class="glyphicon glyphicon-arrow-up"> 返回顶部</a>
+</div>
+
+<!--底部-start-->
+<div class="mmb-footer">
+     <p>
+         <a href="#">手机APP下载</a>
+         <a href="#">慢慢买手机版--掌上比价品台</a>
+     </p>
+     <p><a href="#">m.manmanbuy.com</a></p>
+ </div>
+
+<!--底部固定图标-start-->
+<div class="mmb-fixt">
+        <span class="iconfont icon-chacha01 deletes"></span>
+        <img src="images/logo.png" alt=""/>
+        <div>
+            <p>慢慢买--全网比价</p>
+            <p>每一次购物,都在省钱</p>
+        </div>
+        <a href="#"><button>立即打开</button></a>
+</div>
+</body>
+</html>
+<script type="text/html" id="imgs">
+   {{each result as value i}}
+   <div class="imgs">
+       <span>{{#value.productImg}}</span>
+       <a href="#">收藏</a>
+   </div>
+   <p>{{value.productName}}</p>
+   <div class="row">
+       <div class="col-xs-6"><span>最低价&nbsp; : </span> <span>$123 </span></div>
+       <div class="col-xs-6"><span>最低来自&nbsp; :</span> <span>天猫商城</span></div>
+       <div class="col-xs-6"><span>全网评论&nbsp; :</span> <span>1253条</span></div>
+       <div class="col-xs-6"><span>优选评论&nbsp; :</span> <span>132条</span>
+       </div>
+   </div>
+   {{/each}}
+</script>
+<script type="text/html" id="ask">
+    {{each result as value i}}
+    <div class="wenzi">
+        <div><span>{{value.comName}}</span><span>{{value.comTime}}</span></div>
+        <div><span>☆☆☆☆☆</span><span>{{value.comFrom}}</span></div>
+        <p>{{value.comContent}}</p>
+        <a href="#">回复</a>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="jd">
+    {{each result as value i}}
+         {{#value.bjShop}}
+    {{/each}}
+</script>

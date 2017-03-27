@@ -1,0 +1,92 @@
+.mmb-top {
+  line-height: 40px;
+  background-color: #ff8b00;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.mmb-top span:first-child {
+  font-size: 24px;
+}
+.mmb-list {
+  margin-top: 2px;
+  height: 40px;
+  background-color: white;
+  border-bottom: 1px solid #ccc ;
+}
+.mmb-list > span {
+  display: inline-block;
+  font-size: 20px;
+  width: 11%;
+  text-align: center;
+  line-height: 40px;
+  border-left: 1px solid #ccc;
+}
+.mmb-list .list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 89%;
+}
+.mmb-list .list > div {
+  width: 33.33%;
+  text-align: center;
+  font-size: 12px;
+}
+.mmb-list .list > div span:last-child {
+  font-size: 30px;
+}
+.gc {
+  background-color: white;
+}
+.gc ul {
+  display: none;
+  width: 100%;
+  font-size: 16px;
+  z-index: 3;
+  position: absolute;
+  background-color: white;
+}
+.gc .current {
+  display: block;
+}
+.gc li {
+  height: 40px;
+  border-bottom: 1px solid #ccc ;
+  padding: 0 10px 0 7px;
+  line-height: 40px;
+}
+.gc li > span:nth-of-type(2) {
+  font-size: 26px;
+  color: orange;
+  float: right;
+}
+.mmb-product > ul {
+  width: 100%;
+  padding-right: 10px;
+}
+.mmb-product > ul > li {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.mmb-product > ul > li > a {
+  display: inline-block;
+  background-color: pink;
+  padding: 10px 20px 10px 20px;
+}
+.mmb-product > ul > li > a > img {
+  height: 215px;
+  width: 100%;
+}
+.mmb-product > ul > li > a p:nth-of-type(1) {
+  padding: 6px 0;
+  color: black;
+}
+.mmb-product > ul > li > a p:nth-of-type(2) {
+  color: #f8601d;
+  font-size: 20px;
+}

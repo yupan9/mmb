@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢买</title>
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/inlanddiscount.css"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_9y4v6qtz1zoos9k9.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv/html5shiv.js"></script>
+    <script src="js/respond/respond.js"></script>
+    <![endif]-->
+    <script src="js/node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/inlanddiscount.js"></script>
+</head>
+<body>
+<!--顶部通栏-start-->
+<div class="mmb-top">
+    <span class="fl"><</span>
+    <span>国内折扣</span>
+    <a href="#" class="fr m_r10"><img src="images/header_app.png" alt=""/></a>
+</div>
+
+<!--商品栏-star-->
+<div class="mmb-product">
+    <div class="product clearfix">
+    </div>
+</div>
+
+<!--登录注册-start-->
+<div class="mmb-post">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#" class="glyphicon glyphicon-arrow-up"> 返回顶部</a>
+</div>
+
+<!--底部-start-->
+<div class="mmb-footer">
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版--掌上比价品台</a>
+    </p>
+    <p><a href="#">m.manmanbuy.com</a></p>
+</div>
+
+</body>
+<script type="text/html" id="text">
+    {{each result as value i}}
+    <a href="dusk.html?productid={{value.productId}}">
+        <div>
+            <div>{{#value.productImg}}</div>
+            <p>{{value.productName}}</p>
+            <p>{{value.productPrice}}</p>
+            <div><span>{{value.productFrom}}</span><s>丨</s><span>{{value.productTime}}</span></div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+</html>

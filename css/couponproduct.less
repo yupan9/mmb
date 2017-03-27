@@ -1,0 +1,181 @@
+//顶部通栏-start
+.mmb-top{
+  line-height: 40px;
+  background-color:#e4393c;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 10px;
+
+  a{
+    img{
+      height: 34px;
+      width: 34px;
+    }
+  }
+}
+
+//提示信息-start
+
+.mmb-deng{
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  padding: 8px 0px;
+  background-color: white;
+}
+
+
+//商品栏-start
+.mmb-product{
+  background-color: white;
+  padding-bottom: 20px;
+  >.product{
+    padding:10px;
+    border-bottom: 2px solid #ccc;
+    img{
+      float: left;
+      height: 100px;
+      width: 100px;
+    }
+    p{
+      padding-left: 110px;
+    }
+    p:nth-of-type(1){
+      font-size: 15px;
+      color: black;
+
+    }
+    p:nth-of-type(2){
+      font-size: 13px;
+      font-weight: 600;
+      padding:5px 0 15px 110px ;
+      span:last-child{
+        font-size: 20px;
+        font-weight: normal;
+
+      }
+
+    }
+    p:nth-of-type(3){
+      color: orange;
+      font-size: 13px;
+
+    }
+  }
+
+
+}
+
+//优惠券
+.mmb-pianyi{
+  height: 40px;
+  border-top:1px solid #ccc ;
+  border-bottom:1px solid #ccc ;
+  line-height: 40px;
+  padding-left: 5px;
+  a{
+    font-size: 14px;
+    color: black;
+  }
+}
+.kong{
+  height: 30px;
+  background-color: white;
+}
+//登录注册
+.mmb-post{
+  border-top:1px solid #e6e6e6;
+  border-bottom:1px solid #e6e6e6;
+  width: 100%;
+  a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+
+  }
+  a:nth-of-type(1),a:nth-of-type(2){
+    width: 30%;
+    border-right: 1px solid #e6e6e6;
+  }
+  a:nth-of-type(3){
+    width: 35%;
+  }
+}
+
+
+//底部-start
+.mmb-footer{
+  text-align: center;
+  padding-top:20px;
+  p:first-child{
+    a:first-child{
+      color: red;
+    }
+  }
+
+}
+
+.mask {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  .ppt {
+    position: relative;
+    top:50%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -100px;
+    div:nth-of-type(1){
+      left: 0;
+      height: 50px;
+      width: 50px;
+      font-size: 50px;
+      position: absolute;
+      z-index: 6;
+      top: 50%;
+      margin-top: -25px;
+    }
+    div:nth-of-type(2){
+      right: 0;
+      height: 50px;
+      width: 50px;
+      font-size: 50px;
+      position: absolute;
+      z-index: 6;
+      top: 50%;
+      margin-top: -25px;
+    }
+    .imgs{
+      width: 250px;
+      height: 200px;
+      margin-left: 105px;
+      overflow: hidden;
+      >ul{
+
+        display: flex;
+        flex-wrap: nowrap;
+        img {
+          width: 250px;
+          height: 200px;
+
+
+
+        }
+      }
+    }
+
+
+  }
+}
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢买</title>
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/couponproduct.css"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_bleprqajfl102j4i.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv/html5shiv.js"></script>
+    <script src="js/respond/respond.js"></script>
+    <![endif]-->
+    <script src="js/node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/couponproduct.js"></script>
+</head>
+<body>
+<!--顶部通栏-start-->
+<div class="mmb-top">
+    <span class="fl"><</span>
+    <span>白菜价-淘宝内部券</span>
+    <a href="#" class="fr m_r10"><img src="images/header_app.png" alt=""/></a>
+</div>
+
+<!--提示信息-start-->
+<div class="mmb-deng">
+    --点餐前出示手机中的优惠券，即可享受优惠--
+</div>
+
+<!--商品栏-star-->
+<div class="mmb-product">
+
+</div>
+<!--优惠券-start-->
+<div class="mmb-pianyi">
+    <a href="index.html">首页 ></a>
+    <a href="#">优惠券 ></a>
+    <a href="#"><span></span>优惠券</a>
+</div>
+<div class="kong"></div>
+
+<!--登录注册-start-->
+<div class="mmb-post">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#" class="glyphicon glyphicon-arrow-up"> 返回顶部</a>
+</div>
+
+<!--底部-start-->
+<div class="mmb-footer">
+    <p>
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版--掌上比价品台</a>
+    </p>
+    <p><a href="#">m.manmanbuy.com</a></p>
+</div>
+
+<!--遮罩层-start-->
+<div class="mask">
+    <div class="ppt clearfix">
+        <div class="glyphicon glyphicon-menu-left lefts"></div>
+        <div class="glyphicon glyphicon-menu-right rights"></div>
+        <div class="imgs">
+            <ul class="clearfix">
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/html" id="tproduct">
+{{each result as value i}}
+    <div class="product clearfix">
+        {{#value.couponProductImg}}
+        <p>{{value.couponProductName}}</p>
+        <p><span>{{value.couponProductPrice}}</span><span class="fr iconfont icon-gengduo"></span></p>
+        <p>{{value.couponProductTime}}</p>
+    </div>
+</div>
+{{/each}}
+</script>
+<script type="text/html" id="text1">
+    {{each result as value i}}
+    <li class="fl">{{#value.couponProductImg}}></li>
+    {{/each}}
+</script>
+</html>
